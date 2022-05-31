@@ -1,0 +1,181 @@
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+    header .tophead .col-md-6 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .banner-mobile {
+        right: 125px;
+    }
+    .mobile-02:after {
+        bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        height: 120vh;
+    }
+    header .gg-logo {
+        width: 100px;
+    }
+    header .navbar-dark .navbar-toggler {
+        color: #ffaf1e;
+        border: 0;
+        font-size: 3rem;
+        outline: 0;
+    }
+    header .nav-item {
+        margin: 0;
+        background: #ffaf1e;
+    }
+    header .navbar-dark .navbar-nav .nav-link {
+        color: #222;
+        text-align: center;
+    }
+    header .title-main,
+    header .subtitle-main {
+        text-align: center;
+    }
+    header nav.navbar {
+        padding: 30px 20px;
+    }
+    header .navbar-shrink .navbar-toggler {
+        color: #fff;
+    }
+    header nav.navbar.navbar-shrink {
+        padding: 10px 15px;
+    }
+    .banner-mobile {
+        right: 150px;
+        top: 100px;
+    }
+    header .tophead {
+        margin-top: 30%;
+    }
+    header .title-main {
+        font-size: 40px;
+    }
+    header .subtitle-main {
+        font-size: 40px;
+    }
+    .sesgoarriba {
+        border-width: 100px 100vw 0 0;
+    }
+    .sesgoabajo {
+        border-width: 0 0 100px 100vw;
+    }
+    .games-wrap .row2 {
+        display: none;
+    }
+    .mycard-block figure {
+        height: 300px;
+    }
+    .mycard-block .card-content:before {
+        top: -29px;
+        border-width: 30px 506px 0 0;
+    }
+    section#founder {
+        background: #fff;
+        margin-top: -1px;
+    }
+    section#founder .card .card-body {
+        padding: 28px 20px;
+    }
+    .contact-wrap:after {
+        border-width: 100px 100vw 0 0;
+    }
+    footer.footer {
+        margin-top: -1px;
+    }
+    footer .ft-logo {
+        margin-top: 0;
+    }
+    footer.footer p {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .legal {
+        margin-top: 20px;
+    }
+    .contactLeft {
+        margin-right: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+    .my-social-btn {
+        height: 80px;
+        width: 80px;
+    }
+    .my-social-btn .fa {
+        font-size: 36px;
+        color: #ffaf1e;
+    }
+    .for-mobile {
+        display: block;
+    }
+    .for-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    header {
+        height: 100vh;
+    }
+    .banner-mobile {
+        right: 30px;
+        top: 45px;
+    }
+    header nav.navbar {
+        padding: 10px 20px;
+    }
+    header .navbar-dark .navbar-toggler {
+        font-size: 2rem;
+    }
+    .mobile-01 {
+        width: 180px;
+    }
+    .mobile-02 {
+        width: 200px;
+    }
+    .mobile-01 .slider__item img {
+        width: 165px;
+    }
+    .mobile-02 .slider__item img {
+        width: 185px;
+    }
+    .my-social-btn {
+        height: 60px;
+        width: 60px;
+    }
+    .my-social-btn .fa {
+        font-size: 30px;
+        color: #ffaf1e;
+    }
+    .contactLeft h2 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    header {
+        height: 100vh;
+    }
+    .banner-mobile {
+        right: 50px;
+    }
+    .mobile-01 {
+        width: 140px;
+    }
+    .mobile-02 {
+        width: 160px;
+    }
+    .mobile-01 .slider__item img {
+        width: 125px;
+    }
+    .mobile-02 .slider__item img {
+        width: 145px;
+    }
+}

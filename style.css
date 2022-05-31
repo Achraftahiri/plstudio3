@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 16px;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    transition: all ease .5s;
+}
+
+.gg-logo {
+    width: 130px;
+}
+
+.navbar-shrink .gg-logo {
+    width: 80px;
+}
+
+.mybg-dark {
+    background: #ffaf1e !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+h3.my-heading {
+    font-weight: bold;
+}
+
+li.nav-item {
+    margin: 0 20px 0 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('images/banner.jpg') no-repeat center center;
+    background-size: cover;
+    /*background: linear-gradient(#503eff, #08d4fd);*/
+    /* background: linear-gradient(0deg, #08d4fd 0%, #503eff 100%);*/
+    /*background: linear-gradient(#e66465, #9198e5);*/
+    position: relative;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .3
+}
+
+header .tophead {
+    margin-top: 15%;
+}
+
+header .title-main {
+    font-size: 80px;
+    font-weight: 800;
+    text-shadow: 1px 3px 6px #000;
+}
+
+header .subtitle-main {
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 1em;
+    text-shadow: 1px 3px 6px #000;
+}
+
+header .btn-explore {
+    display: inline-block;
+    padding: 8px 20px;
+    /*width: 128px;*/
+    font-size: 14px;
+    background: #ffaf1e;
+    border: 1px solid #ffaf1e;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #00000059;
+}
+
+header .btn-account {
+    display: inline-block;
+    padding: 8px 20px;
+    /* width: 128px;*/
+    font-size: 14px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #4f44ff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px #00000059;
+}
+
+.top-btn-block a {
+    margin: 0 7px 0 0;
+}
+
+/***overview***/
+
+.overview-wrap .title-overview {
+    text-align: center;
+    color: #ffaf1e;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 23px;
+}
+
+.overview-wrap .title-overview span {
+    color: #2889ef;
+    font-weight: 400;
+}
+
+.overview-wrap .subtitle-overview {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+    margin: 20px auto 50px;
+    text-align: center;
+}
+
+/***Mobile Banner***/
+
+.banner-mobile {
+    position: absolute;
+    right: 15px;
+    top: 100px;
+    z-index: 999;
+}
+
+.dm-width {
+    display: inline-block;
+}
+
+.mobile-01 {
+    width: 220px;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.50));
+}
+
+.mobile-02 {
+    width: 260px;
+    margin-left: -20px;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.50));
+    position: relative;
+}
+
+.mobile-02:after {
+    content: '';
+    background: url(images/right-iphone-shadow.png) no-repeat;
+    background-size: cover;
+    width: 338px;
+    height: 160px;
+    display: inline-block;
+    position: absolute;
+    bottom: 31px;
+    right: -140px;
+    z-index: -1;
+}
+
+.iphone-mockup {
+    position: relative;
+    z-index: 5;
+}
+
+.dm-device {
+    position: relative;
+    width: 100%;
+    padding-bottom: 203.477897%;
+}
+
+.device {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('images/iPhone-11-Pro.png');
+    background-size: cover;
+    background-position: center center;
+    z-index: 99;
+}
+
+.screen {
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: #E91E63;
+    border-radius: 15px;
+}
+
+.slider__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-01 .slider__item img {
+    width: 200px;
+}
+
+.mobile-02 .slider__item img {
+    width: 240px;
+}
+
+/***skewed***/
+
+.sesgoabajo {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 26vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.sesgoarriba {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-width: 26vh 100vw 0 0;
+    border-style: solid;
+    border-color: #ffffff transparent transparent transparent;
+}
+
+.contenedor {
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.btn-contact {
+    background: #ffaf1e;
+    padding: 14px 50px;
+    color: #fff;
+}
+
+.btn-contact:hover,
+.btn-contact:focus {
+    background: #2889ef;
+    color: #fff;
+}
+
+/***our team***/
+
+.our-team {
+    position: relative;
+    padding: 5rem 0;
+}
+
+.title-our-team {
+    text-align: center;
+    color: #ffaf1e;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 23px;
+}
+
+.subtitle-our-team {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+    max-width: 660px;
+    margin: 19px auto 103px;
+    text-align: center;
+}
+
+/***overview***/
+
+.overview-box {
+    height: 340px;
+    width: 100%;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.overview-box:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all ease 1s;
+}
+
+.overview-box h5 {
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #606060;
+    margin-bottom: 20px;
+}
+
+.overview-box p {
+    font-size: 14px;
+    color: #666666;
+}
+
+.features-icons-icon {
+    vertical-align: middle;
+    margin: 20px auto;
+}
+
+.features-icons-icon i {
+    color: lightgrey;
+}
+
+.overview-box:hover .features-icons-icon i.html5 {
+    color: #e54d26;
+    transition: all ease 1s;
+}
+
+.overview-box:hover .features-icons-icon i.css3 {
+    color: #379ad5;
+    transition: all ease 1s;
+}
+
+.overview-box:hover .features-icons-icon i.android {
+    color: #a4c739;
+    transition: all ease 1s;
+}
+
+.overview-box:hover .features-icons-icon i.drupal {
+    color: #0c76ab;
+    transition: all ease 1s;
+}
+
+/***Our Cards***/
+
+.games-wrap {
+    background: #ffaf1e;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    padding: 8rem 0 12rem;
+}
+
+.title-games {
+    text-align: center;
+    color: #151515;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 23px;
+}
+
+.title-games span {
+    color: #2889ef;
+    font-weight: 400;
+}
+
+.subtitle-games {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+    color: #151515;
+    margin: 20px auto 50px;
+    text-align: center;
+}
+
+.mycard-block {
+    background: #fff;
+    border: 3px solid #fff;
+    margin-bottom: 30px;
+    box-shadow: 1px 3px 5px rgb(0 0 0 / 20%);
+}
+
+.games-wrap .row1 .col-md-6:nth-child(even) .mycard-block {
+    background: #2889ef;
+    border-color: #2889ef;
+}
+
+.games-wrap .row1 .col-md-6:nth-child(even) .mycard-block .card-content:before {
+    border-color: transparent #2889ef transparent transparent;
+}
+
+.games-wrap .row1 .col-md-6:nth-child(even) .mycard-block .card-content a,
+.games-wrap .row1 .col-md-6:nth-child(even) .mycard-block .card-content p {
+    color: #fff;
+}
+
+.games-wrap .row2 .col-md-6:nth-child(odd) .mycard-block {
+    background: #2889ef;
+    border-color: #2889ef;
+}
+
+.games-wrap .row2 .col-md-6:nth-child(odd) .mycard-block .card-content:before {
+    border-color: transparent #2889ef transparent transparent;
+}
+
+.games-wrap .row2 .col-md-6:nth-child(odd) .mycard-block .card-content a,
+.games-wrap .row2 .col-md-6:nth-child(odd) .mycard-block .card-content p {
+    color: #fff;
+}
+
+.games-wrap .row3 .col-md-6:nth-child(even) .mycard-block {
+    background: #2889ef;
+    border-color: #2889ef;
+}
+
+.games-wrap .row3 .col-md-6:nth-child(even) .mycard-block .card-content:before {
+    border-color: transparent #2889ef transparent transparent;
+}
+
+.games-wrap .row3 .col-md-6:nth-child(even) .mycard-block .card-content a,
+.games-wrap .row3 .col-md-6:nth-child(even) .mycard-block .card-content p {
+    color: #fff;
+}
+
+.mycard-block figure {
+    height: 160px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.mycard-block img {
+    margin-top: -40px;
+    width: 100%;
+}
+
+.mycard-block .card-content {
+    padding: 16px;
+    position: relative;
+}
+
+.mycard-block .card-content:before {
+    z-index: 10;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -20px;
+    right: 0;
+    border-width: 20px 250px 0 0;
+    border-style: solid;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.mycard-block .card-content a,
+.mycard-block .card-content p {
+    color: #2889ef;
+}
+
+.mycard-block .card-content h5 {
+    margin-bottom: 15px;
+}
+
+.mycard-block .card-content p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.mycard-block .card-content a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-more {
+    background: #fff;
+    padding: 14px 50px;
+    color: #ffaf1e;
+}
+
+.btn-more:hover,
+.btn-more:focus {
+    background: #2889ef;
+    color: #fff;
+}
+
+/******/
+
+.row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.our-team .mycard-block {
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border: 3px solid #ffffff;
+    margin-bottom: 2rem;
+}
+
+.our-team .mycard-block:hover {
+    border: 3px solid #503eff;
+}
+
+.our-team .mycard-block img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.our-team .mycard-block h3 {
+    color: #2a2a2a;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px 0;
+    text-transform: uppercase;
+}
+
+.our-team .mycard-block h3 a {
+    text-decoration: none;
+    color: #606060;
+    font-weight: 700;
+}
+
+.our-team .mycard-block h3 a:hover {
+    color: #337ab7;
+}
+
+.our-team .mycard-block p {
+    color: #2a2a2a;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.our-team .mycard-block .follow-us li {
+    display: inline-block;
+    width: auto;
+    margin: 0 5px;
+}
+
+/******founder******/
+
+section#founder {
+    position: relative;
+    padding: 3rem 0;
+}
+
+section#founder .card {
+    margin-bottom: 2rem;
+    background: #f4f4f4;
+    border-color: #e7e7e7;
+    border-radius: 0;
+    position: relative;
+    margin-top: 85px;
+}
+
+section#founder .card:hover {
+    background: #2889ef;
+    color: #fff;
+    cursor: pointer;
+}
+
+section#founder .title-founder {
+    text-align: center;
+    color: #ffaf1e;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 23px;
+}
+
+section#founder .title-founder span {
+    color: #2889ef;
+    font-weight: 400;
+}
+
+section#founder .subtitle-founder {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 20px auto 50px;
+    text-align: center;
+}
+
+section#founder .card-body h6 {
+    opacity: 0.7;
+}
+
+section#founder .card img {
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+section#founder .card a {
+    color: #503eff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/******contact wrap******/
+
+section.contact-wrap {
+    overflow: hidden;
+    padding: 180px 0;
+    position: relative;
+    background: url('images/footer-bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact-wrap:after {
+    z-index: 10;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    border-width: 150px 100vw 0 0;
+    border-style: solid;
+    border-color: transparent #ffaf1e transparent transparent;
+}
+
+.cta {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.cta .cta-inner {
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 3rem;
+    margin: .5rem;
+    box-shadow: 0px 0px 10px 0px #00000059;
+}
+
+.contactForm {
+    width: 100%;
+    border-radius: 5px;
+    margin: auto;
+    padding: 30px 0 20px;
+}
+
+.contactForm .form-control {
+    border-radius: 3px;
+    border: 1px solid #ffaf1e;
+    background-color: rgba(21, 21, 21, 0.2);
+    color: #ffaf1e;
+    margin-bottom: 2rem;
+    outline: none;
+    padding: 11px;
+}
+
+.contactForm ::placeholder {
+    color: #ffaf1e;
+}
+
+.contactLeft {
+    margin-right: 170px;
+    margin-top: 60px;
+}
+
+.contactLeft h2 {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffaf1e;
+}
+
+.contactLeft h2 span {
+    font-weight: 400;
+}
+
+.contactLeft p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+input.btn-login {
+    width: 100%;
+    display: block;
+    margin: 0;
+    background-color: #dc971b;
+    border: 1px solid #ffaf1e;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    outline: none;
+    box-shadow: 3px 3px 0px 0 #ffaf1e;
+}
+
+input.btn-login:hover,
+input.btn-login:focus {
+    background: #2889ef;
+    border: 1px solid #2889ef;
+}
+
+ul.follow-us {
+    margin-top: 54px;
+}
+
+.follow-us li {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.my-social-btn {
+    background: transparent;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border: 1px solid #ffaf1e;
+    display: table-cell;
+}
+
+.my-social-btn:hover {
+    background: #ffaf1e;
+    color: #fff;
+}
+
+/* Footer */
+
+footer.footer {
+    padding: 15px 0 30px;
+    position: relative;
+    background-color: #ffaf1e;
+    z-index: 15;
+}
+
+footer .ft-logo {
+    width: 108px;
+    margin-top: -90px;
+}
+
+footer.footer p {
+    font-size: 14px;
+    color: #151515;
+}
+
+.legal li {
+    display: inline-block;
+}
+
+.legal li {
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #151515;
+}
+
+.legal li:last-child {
+    border-right: 0;
+    padding-right: 0;
+}
+
+.legal li a {
+    color: #151515;
+    line-height: 0.8;
+    text-decoration: none;
+    margin-left: -4px;
+    font-size: 14px;
+}
+
+.for-mobile {
+    display: none;
+}
+
+.for-deskotp {
+    display: block;
+}
